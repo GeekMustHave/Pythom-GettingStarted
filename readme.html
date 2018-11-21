@@ -459,6 +459,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_syntax">3.1. Syntax</a></li>
 <li><a href="#_object_orientated_programming">3.2. Object-Orientated Programming</a></li>
+<li><a href="#_clear_screen">3.3. Clear Screen</a></li>
 </ul>
 </li>
 <li><a href="#_resources">4. Resources</a></li>
@@ -558,7 +559,7 @@ If you are running Python from within vsCode you may have to restart vsCode to g
 <p>Python has no mandatory statement termination characters and blocks are specified by indentation.</p>
 </li>
 <li>
-<p>Indent to begin a block, dedent to end one. Statements that expect an indentation level end in a colon (:).</p>
+<p><strong>Indent to begin a block</strong>, dedent to end one. Statements that expect an indentation level end in a colon (:).</p>
 </li>
 <li>
 <p>Comments start with the pound (#) sign and are single-line</p>
@@ -587,6 +588,20 @@ However, the procedural programming methodology takes on a top-down approach and
 On the other hand, OOP is a bottom-up problem-solving technique which seeks a blueprint of the solution at the onset and leaves implementation for the later.</p>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_clear_screen">3.3. Clear Screen</h3>
+<div class="paragraph">
+<p>This is much more complicated than it needed to be.
+Whats wrong with <code>clear</code>?</p>
+</div>
+<div class="listingblock">
+<div class="title">Clear Screen</div>
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python">import os
+_=os.system("clear")</code></pre>
+</div>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -603,7 +618,7 @@ Python Wiki::
 <div id="footer">
 <div id="footer-text">
 Version 2.1b<br>
-Last updated 2018-11-21 11:24:47 Eastern Standard Time
+Last updated 2018-11-21 11:52:11 Eastern Standard Time
 </div>
 </div>
 </body>
