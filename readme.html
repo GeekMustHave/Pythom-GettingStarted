@@ -460,9 +460,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_syntax">3.1. Syntax</a></li>
 <li><a href="#_object_orientated_programming">3.2. Object-Orientated Programming</a></li>
 <li><a href="#_clear_screen">3.3. Clear Screen</a></li>
+<li><a href="#_literal_collections">3.4. Literal Collections</a></li>
+<li><a href="#_data_types">3.5. Data types</a></li>
 </ul>
 </li>
-<li><a href="#_resources">4. Resources</a></li>
+<li><a href="#_constants_py_program">4. <code>constants.py</code> Program</a></li>
+<li><a href="#_python1_py_program">5. <code>python1.py</code> Program</a>
+<ul class="sectlevel2">
+<li><a href="#_python1_py_results">5.1. <code>python1.py</code> results</a></li>
+</ul>
+</li>
+<li><a href="#_resources">6. Resources</a></li>
 </ul>
 </div>
 </div>
@@ -576,6 +584,18 @@ If you are running Python from within vsCode you may have to restart vsCode to g
 <li>
 <p>Increment/decrement values using the <code>+=</code> and <code>-=</code> operators respectively by the right-hand amount.</p>
 </li>
+<li>
+<p>Keywords are the reserved words in Python.  Keywords are case sensitive.</p>
+</li>
+<li>
+<p>Statements can extend over multiple lines with the line continuation character <code>(\)</code>.</p>
+</li>
+<li>
+<p>Boolean <code>True</code> is a <code>1</code>, 'False` is a <code>0</code></p>
+</li>
+<li>
+<p><code>Null</code> is now <code>None</code></p>
+</li>
 </ul>
 </div>
 </div>
@@ -602,15 +622,189 @@ _=os.system("clear")</code></pre>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_literal_collections">3.4. Literal Collections</h3>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>List</strong> - <code>fruits = ['apple', 'orange', 'bannana']</code></p>
+</li>
+<li>
+<p><strong>Tuple</strong> - <code>numbers = (1, 2, 3, 5, 8, 13)</code></p>
+</li>
+<li>
+<p><strong>Dictionary</strong> -<code>ham = {'a':'Alpha', 'b': 'Bravo', 'c': 'Charlie'}</code></p>
+</li>
+<li>
+<p><strong>Set</strong> - <code>vowels = {'a', 'e', 'i', 'o', 'u'}</code></p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_data_types">3.5. Data types</h3>
+<div class="paragraph">
+<p>Every value in Python has a datatype.
+Since everything is an object in Python programming,
+data types are actually classes and variables are instance (object) of these classes.</p>
+</div>
+<div class="paragraph">
+<p><strong>Integers</strong> - as big a number as you need</p>
+</div>
+<div class="paragraph">
+<p><strong>Float</strong> - up to 15 decimal points</p>
+</div>
+<div class="paragraph">
+<p><strong>Complex</strong> - <code>x + yj</code> where <code>x</code> is the real part, <code>y</code> is the imaginary part???</p>
+</div>
+<div class="paragraph">
+<p><strong>Lists</strong> - <code>a = [5,10,12,32,118]</code> then <code>a[3]</code> would be <code>32</code> indexing starts at zero, a[3]=666 replaces item in list.
+Very much like a simple array</p>
+</div>
+<div class="paragraph">
+<p><strong>Tuple</strong> - Tuple is an ordered sequence of items same as list.The only difference is that tuples are immutable.
+Tuples once created cannot be modified.</p>
+</div>
+<div class="paragraph">
+<p>Tuples are used to write-protect data and are usually faster than list as it cannot change dynamically.</p>
+</div>
+<div class="paragraph">
+<p><code>stuff = ('Diodes', 45, 1.25)</code>, then <code>stuff[1]</code> would be <code>45</code>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Sets</strong> - Unordered collection of unique items. Set is defined by values separated by comma inside braces { }. Items in a set are not ordered. Since, set are unordered collection, indexing has no meaning. Hence the slicing operator [] does not work.
+Set have unique values. They eliminate duplicates.</p>
+</div>
+<div class="paragraph">
+<p><code>a = {1,2,2,3,3,3,4,4,5}</code> then <code>a</code> becomes <code>{1,2,3,4,5}</code></p>
+</div>
+<div class="paragraph">
+<p><strong>Dictionary</strong> - Dictionary is an unordered collection of key-value pairs.
+It is generally used when we have a huge amount of data. Dictionaries are optimized for retrieving data.
+We must know the key to retrieve the value.</p>
+</div>
+<div class="paragraph">
+<p>So <code>morse = {'a': ".-", 'b': "<em>..", 'c': "</em>._."}</code> and <code>morse['a']</code> would return <code>.-</code></p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_resources">4. Resources</h2>
+<h2 id="_constants_py_program">4. <code>constants.py</code> Program</h2>
 <div class="sectionbody">
+<div class="listingblock">
+<div class="title">constants.py program code</div>
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># --- Typical usage is a constant.py file for constants????
+
+PI = 3.1415
+GRAVITY = 9.8
+
+# --- Used in other files
+#
+# import constant
+# print(constant.PI)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_python1_py_program">5. <code>python1.py</code> Program</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="title">python1.py program code</div>
+<div class="content">
+<pre class="highlight"><code class="language-python" data-lang="python"># --- GeekMustHave Python - Getting Started
+
+# --- All this just to clear the screen???
+import os
+_=os.system("clear")
+
+message = "GeekMustHave, Python Journeys - Getting started "
+message += "11/21/2018 Happy Learning Day"
+print(message)
+
+# --- Def is the equilivant of function
+#     DocString can be first line of Def triple double-quotes """Description"""
+
+def double(num):
+  """Function to double the value sent to it"""
+  return num*2
+
+print(double(4))  #--- Run the function
+print(double.__doc__)  #--- Show documentation about function
+
+# --- Multiple variables, one line
+firstName, lastName, age, pi = 'John', 'Schuster', 65, 3.1415
+
+print("First name: " + firstName)
+print("Last Name: " + lastName)
+print("My age: " + str(age))  #--- standard (str) function
+print("Piece of Pi: " + str(pi))
+print("Pi Age: " + str(age * pi))
+
+import constant
+print(constant.PI)   #--- Not the same as lowercase (pi)
+
+# --- Lists [] [] [] [] []
+a = [5,10,12,32,118]
+print('Forth item in list: ' + str(a[3]))  #--- should be 32 as lists are zero based index
+a[3]=988
+print('Forth item in list: ' + str(a[3]))  #--- should be 988 as lists are zero based index
+
+# --- Tuples - Can't be changed () () () ()
+vowels = ('a', 'e', 'i', 'o', 'u')
+print("Second item in set: " + vowels[1])
+
+# --- Sets - Unordered lists, not reordered, dups removed {} {} {} {}
+ids = {192, 188, 203, 188, 144, 192, 188}
+print("Sets: ")
+print(ids)
+
+# --- Dictionary - Unordered key:value  {:} {:} {:}, no indexed 0,1,2 access, key only
+morse = {'a': ".-", 'b': "_..", 'c': "_._."}
+print("Morse for 'a': " + morse['a'])</code></pre>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_python1_py_results">5.1. <code>python1.py</code> results</h3>
 <div class="paragraph">
-<p>[[Python Wiki]]
-Python Wiki::
-<a href="https://wiki.python.org/moin/BeginnersGuide/Programmers" target="_blank" rel="noopener">https://wiki.python.org/moin/BeginnersGuide/Programmers</a></p>
+<p>Here are the results from the python program</p>
+</div>
+<div class="listingblock">
+<div class="title">Python Results</div>
+<div class="content">
+<pre class="highlight"><code class="language-text" data-lang="text">GeekMustHave, Python Journeys - Getting started 11/21/2018 Happy Learning Day
+8
+Function to double the value sent to it
+First name: John
+Last Name: Schuster
+My age: 65
+Piece of Pi: 3.1415
+Pi Age: 204.19750000000002
+3.1415
+Forth item in list: 32
+Forth item in list: 988
+Second item in set: e
+Sets:
+{192, 203, 188, 144}
+Morse for 'a': .-</code></pre>
+</div>
+</div>
+<div style="page-break-after: always;"></div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_resources">6. Resources</h2>
+<div class="sectionbody">
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Python Wiki</dt>
+<dd>
+<p><a href="https://wiki.python.org/moin/BeginnersGuide/Programmers" target="_blank" rel="noopener">https://wiki.python.org/moin/BeginnersGuide/Programmers</a></p>
+</dd>
+</dl>
 </div>
 </div>
 </div>
@@ -618,7 +812,7 @@ Python Wiki::
 <div id="footer">
 <div id="footer-text">
 Version 2.1b<br>
-Last updated 2018-11-21 11:52:11 Eastern Standard Time
+Last updated 2018-11-21 13:25:33 Eastern Standard Time
 </div>
 </div>
 </body>

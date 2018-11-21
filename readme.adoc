@@ -11,12 +11,13 @@ v2.1b, 11/07/2018: Personal Notes
 :chapter-label: 
 :experimental:
 :source-hightlighter: coderay
+:source-language: python
 :icons: font
 :docdir: */documents
-:github: https://github.com/GeekMustHave/Github repository
+:github: https://github.com/GeekMustHave/Pythom-GettingStarted
 :linkattrs:
 :seclinks:
-:title-logo-image: ./images/CreateDoco_PWC-PLL-Title-Logo.png
+:title-logo-image: ./images/CreateDoco_GMH-Article-CoverTitle.png
 
 
 It is the day before Thanksgiving, what I have come to call a `Learning Day`.  A day where I pick something I need to learn more about and just get started.
@@ -29,7 +30,7 @@ Python is everywhere.  From the small little Gemma Zero from Adafruit all the wa
 Verify Version
 
 .Python Version
-[source,powershell]
+[source, powershell]
 ----
 PS D:\Users\jschust2\Dropbox\myDev\Python-Journey\GettingStarted> python --version
 Python 3.6.3
@@ -61,7 +62,7 @@ image::vscode-python.png[Microsoft Python Extension, align='center']
 === Install the linter
 
 .Install Python Linter
-[source,powershell]
+[source, powershell]
 ----
  python -m pip install -U pylint --user
 ----
@@ -97,7 +98,7 @@ This is much more complicated than it needed to be.
 Whats wrong with `clear`?
 
 .Clear Screen
-[source,python]
+[source, python]
 ----
 import os
 _=os.system("clear")
@@ -144,8 +145,47 @@ We must know the key to retrieve the value.
 
 So `morse = {'a': ".-", 'b': "_..", 'c': "_._."}` and `morse['a']` would return `.-`
 
+== `constants.py` Program
+
+.constants.py program code
+[source, python]
+----
+include::./constant.py[]
+----
+
+
+== `python1.py` Program
+
+.python1.py program code
+[source, python]
+----
+include::./python1.py[]
+----
 
  
+=== `python1.py` results
+
+Here are the results from the python program
+
+.Python Results
+[source, text]
+----
+GeekMustHave, Python Journeys - Getting started 11/21/2018 Happy Learning Day
+8
+Function to double the value sent to it
+First name: John
+Last Name: Schuster
+My age: 65
+Piece of Pi: 3.1415
+Pi Age: 204.19750000000002
+3.1415
+Forth item in list: 32
+Forth item in list: 988
+Second item in set: e
+Sets:
+{192, 203, 188, 144}
+Morse for 'a': .-
+----
 
 
 <<<<
