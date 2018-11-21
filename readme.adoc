@@ -1,0 +1,31 @@
+= Doco Title
+John Schuster <John.schuster@PhoenixWorkgroup.com>
+v2.1b, 11/07/2018: Doco Type
+:Author: John HR Schuster
+:Company: Phoenix Learning Labs
+:toc: left
+:toclevels: 4:
+:imagesdir: ./images
+:pagenums:
+:numbered: 
+:chapter-label: 
+:experimental:
+:source-hightlighter: coderay
+:icons: font
+:docdir: */documents
+:github: https://github.com/GeekMustHave/Github repository
+:linkattrs:
+:seclinks:
+:title-logo-image: ./images/CreateDoco_PWC-PLL-Title-Logo.png
+
+
+
+
+
+
+
+
+////
+Thjis template created by GeekMustHave
+////
+
