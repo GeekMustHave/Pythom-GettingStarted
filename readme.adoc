@@ -1,6 +1,6 @@
 = Python Journeys+++<br>+++Getting Started+++<br>+++GeekMustHave
 John Schuster <John.schuster@PhoenixWorkgroup.com>
-v2.1b, 11/07/2018: Personal NOtes
+v2.1b, 11/07/2018: Personal Notes
 :Author: John HR Schuster
 :Company: Phoenix Learning Labs
 :toc: left
@@ -24,7 +24,75 @@ It is the day before Thanksgiving, what I have come to call a `Learning Day`.  A
 Python is everywhere.  From the small little Gemma Zero from Adafruit all the way up to the large parallel systems.  This should be my second language next to JavaScript/Node.
 
 
+== Install Python Windows
 
+Verify Version
+
+.Python Version
+[source,powershell]
+----
+PS D:\Users\jschust2\Dropbox\myDev\Python-Journey\GettingStarted> python --version
+Python 3.6.3
+----
+
+=== Install Latest version
+
+If installed version is much older than current, update it.
+
+.Python Update
+image::python-version.png[Python Update, align='center']
+ 
+Check the Python path option.
+
+.Python Options
+image::install-options.png[Python Options, align='center']
+
+NOTE:  If you are running Python from within vsCode you may have to restart vsCode to get the most current version of Python.
+
+
+
+== vsCode and Python
+
+Microsoft has an vsCode extension with 23 million downloads, sounds safe.
+
+.Microsoft Python Extension
+image::vscode-python.png[Microsoft Python Extension, align='center']
+
+=== Install the linter
+
+.Install Python Linter
+[source,powershell]
+----
+ python -m pip install -U pylint --user
+----
+
+
+
+== Python basics
+
+=== Syntax
+
+* Python has no mandatory statement termination characters and blocks are specified by indentation. 
+* Indent to begin a block, dedent to end one. Statements that expect an indentation level end in a colon (:). 
+* Comments start with the pound (#) sign and are single-line
+* Multi-line strings are used for multi-line comments. 
+* Values are assigned (in fact, objects are bound to names) with the equals sign (`=`)
+* Equality testing is done using two equals signs (`==`). 
+* Increment/decrement values using the `+=` and `-=` operators respectively by the right-hand amount.
+
+=== Object-Orientated Programming
+
+Object-Oriented Programming (OOP) comes built into the Python language. 
+It lays down a model which derive a solution by creating objects, defining relationships, and binding data.
+However, the procedural programming methodology takes on a top-down approach and solves one problem at a time while splitting it into smaller ones. 
+On the other hand, OOP is a bottom-up problem-solving technique which seeks a blueprint of the solution at the onset and leaves implementation for the later.
+ 
+
+== Resources
+
+[[Python Wiki]]
+Python Wiki::
+https://wiki.python.org/moin/BeginnersGuide/Programmers[https://wiki.python.org/moin/BeginnersGuide/Programmers, window='_blank']
 
 
 
