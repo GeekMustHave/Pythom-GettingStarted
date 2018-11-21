@@ -1,6 +1,6 @@
-= Doco Title
+= Python Journeys+++<br>+++Getting Started+++<br>+++GeekMustHave
 John Schuster <John.schuster@PhoenixWorkgroup.com>
-v2.1b, 11/07/2018: Doco Type
+v2.1b, 11/07/2018: Personal NOtes
 :Author: John HR Schuster
 :Company: Phoenix Learning Labs
 :toc: left
@@ -19,6 +19,10 @@ v2.1b, 11/07/2018: Doco Type
 :title-logo-image: ./images/CreateDoco_PWC-PLL-Title-Logo.png
 
 
+It is the day before Thanksgiving, what I have come to call a `Learning Day`.  A day where I pick something I need to learn more about and just get started.
+
+Python is everywhere.  From the small little Gemma Zero from Adafruit all the way up to the large parallel systems.  This should be my second language next to JavaScript/Node.
+
 
 
 
@@ -26,6 +30,6 @@ v2.1b, 11/07/2018: Doco Type
 
 
 ////
-Thjis template created by GeekMustHave
+This template created by GeekMustHave
 ////
 
