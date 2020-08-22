@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?><?asciidoc-toc maxdepth="4"?><?asciidoc-numbered?><article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en">
+<info>
+<title>Python Journeys<br>Getting Started</br><br>GeekMustHave</br></title>
+<date>11/07/2018</date>
+<author>
+<personname>
+<firstname>John</firstname>
+<othername>HR</othername>
+<surname>Schuster</surname>
+</personname>
+<email>John.schuster@PhoenixWorkgroup.com</email>
+</author>
+<authorinitials>JHS</authorinitials>
+<revhistory>
+<revision>
+<revnumber>2.1b</revnumber>
+<date>11/07/2018</date>
+<authorinitials>JHS</authorinitials>
+<revremark>Personal Notes</revremark>
+</revision>
+</revhistory>
+</info>
+<simpara>It is the day before Thanksgiving, what I have come to call a <literal>Learning Day</literal>.  A day where I pick something I need to learn more about and just get started.</simpara>
+<simpara>Python is everywhere.  From the small little Gemma Zero from Adafruit all the way up to the large parallel systems.  This should be my second language next to JavaScript/Node.</simpara>
+<section xml:id="_install_python_windows">
+<title>Install Python Windows</title>
+<simpara>Verify Version</simpara>
+<formalpara>
+<title>Python Version</title>
+<para>
+<programlisting language="powershell" linenumbering="unnumbered">PS D:\Users\jschust2\Dropbox\myDev\Python-Journey\GettingStarted&gt; python --version
+Python 3.6.3</programlisting>
+</para>
+</formalpara>
+<section xml:id="_install_latest_version">
+<title>Install Latest version</title>
+<simpara>If installed version is much older than current, update it.</simpara>
+<figure>
+<title>Python Update</title>
+<mediaobject>
+<imageobject>
+<imagedata align="center" fileref="./images/python-version.png"/>
+</imageobject>
+<textobject><phrase>Python Update</phrase></textobject>
+</mediaobject>
+</figure>
+<simpara>Check the Python path option.</simpara>
+<figure>
+<title>Python Options</title>
+<mediaobject>
+<imageobject>
+<imagedata align="center" fileref="./images/install-options.png"/>
+</imageobject>
+<textobject><phrase>Python Options</phrase></textobject>
+</mediaobject>
+</figure>
+<note>
+<simpara>If you are running Python from within vsCode you may have to restart vsCode to get the most current version of Python.</simpara>
+</note>
+</section>
+</section>
+<section xml:id="_vscode_and_python">
+<title>vsCode and Python</title>
+<simpara>Microsoft has an vsCode extension with 23 million downloads, sounds safe.</simpara>
+<figure>
+<title>Microsoft Python Extension</title>
+<mediaobject>
+<imageobject>
+<imagedata align="center" fileref="./images/vscode-python.png"/>
+</imageobject>
+<textobject><phrase>Microsoft Python Extension</phrase></textobject>
+</mediaobject>
+</figure>
+<section xml:id="_install_the_linter">
+<title>Install the linter</title>
+<formalpara>
+<title>Install Python Linter</title>
+<para>
+<programlisting language="powershell" linenumbering="unnumbered"> python -m pip install -U pylint --user</programlisting>
+</para>
+</formalpara>
+</section>
+</section>
+<section xml:id="_python_basics">
+<title>Python basics</title>
+<section xml:id="_syntax">
+<title>Syntax</title>
+<itemizedlist>
+<listitem>
+<simpara>Python has no mandatory statement termination characters and blocks are specified by indentation.</simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Indent to begin a block</emphasis>, dedent to end one. Statements that expect an indentation level end in a colon (:).</simpara>
+</listitem>
+<listitem>
+<simpara>Comments start with the pound (#) sign and are single-line</simpara>
+</listitem>
+<listitem>
+<simpara>Multi-line strings are used for multi-line comments.</simpara>
+</listitem>
+<listitem>
+<simpara>Values are assigned (in fact, objects are bound to names) with the equals sign (<literal>=</literal>)</simpara>
+</listitem>
+<listitem>
+<simpara>Equality testing is done using two equals signs (<literal>==</literal>).</simpara>
+</listitem>
+<listitem>
+<simpara>Increment/decrement values using the <literal>+=</literal> and <literal>-=</literal> operators respectively by the right-hand amount.</simpara>
+</listitem>
+<listitem>
+<simpara>Keywords are the reserved words in Python.  Keywords are case sensitive.</simpara>
+</listitem>
+<listitem>
+<simpara>Statements can extend over multiple lines with the line continuation character <literal>(\)</literal>.</simpara>
+</listitem>
+<listitem>
+<simpara>Boolean <literal>True</literal> is a <literal>1</literal>, 'False` is a <literal>0</literal></simpara>
+</listitem>
+<listitem>
+<simpara><literal>Null</literal> is now <literal>None</literal></simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_object_orientated_programming">
+<title>Object-Orientated Programming</title>
+<simpara>Object-Oriented Programming (OOP) comes built into the Python language.
+It lays down a model which derive a solution by creating objects, defining relationships, and binding data.
+However, the procedural programming methodology takes on a top-down approach and solves one problem at a time while splitting it into smaller ones.
+On the other hand, OOP is a bottom-up problem-solving technique which seeks a blueprint of the solution at the onset and leaves implementation for the later.</simpara>
+</section>
+<section xml:id="_clear_screen">
+<title>Clear Screen</title>
+<simpara>This is much more complicated than it needed to be.
+Whats wrong with <literal>clear</literal>?</simpara>
+<formalpara>
+<title>Clear Screen</title>
+<para>
+<programlisting language="python" linenumbering="unnumbered">import os
+_=os.system("clear")</programlisting>
+</para>
+</formalpara>
+</section>
+<section xml:id="_literal_collections">
+<title>Literal Collections</title>
+<itemizedlist>
+<listitem>
+<simpara><emphasis role="strong">List</emphasis> - <literal>fruits = ['apple', 'orange', 'bannana']</literal></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Tuple</emphasis> - <literal>numbers = (1, 2, 3, 5, 8, 13)</literal></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Dictionary</emphasis> -<literal>ham = {'a':'Alpha', 'b': 'Bravo', 'c': 'Charlie'}</literal></simpara>
+</listitem>
+<listitem>
+<simpara><emphasis role="strong">Set</emphasis> - <literal>vowels = {'a', 'e', 'i', 'o', 'u'}</literal></simpara>
+</listitem>
+</itemizedlist>
+</section>
+<section xml:id="_data_types">
+<title>Data types</title>
+<simpara>Every value in Python has a datatype.
+Since everything is an object in Python programming,
+data types are actually classes and variables are instance (object) of these classes.</simpara>
+<simpara><emphasis role="strong">Integers</emphasis> - as big a number as you need</simpara>
+<simpara><emphasis role="strong">Float</emphasis> - up to 15 decimal points</simpara>
+<simpara><emphasis role="strong">Complex</emphasis> - <literal>x + yj</literal> where <literal>x</literal> is the real part, <literal>y</literal> is the imaginary part???</simpara>
+<simpara><emphasis role="strong">Lists</emphasis> - <literal>a = [5,10,12,32,118]</literal> then <literal>a[3]</literal> would be <literal>32</literal> indexing starts at zero, a[3]=666 replaces item in list.
+Very much like a simple array</simpara>
+<simpara><emphasis role="strong">Tuple</emphasis> - Tuple is an ordered sequence of items same as list.The only difference is that tuples are immutable.
+Tuples once created cannot be modified.</simpara>
+<simpara>Tuples are used to write-protect data and are usually faster than list as it cannot change dynamically.</simpara>
+<simpara><literal>stuff = ('Diodes', 45, 1.25)</literal>, then <literal>stuff[1]</literal> would be <literal>45</literal>.</simpara>
+<simpara><emphasis role="strong">Sets</emphasis> - Unordered collection of unique items. Set is defined by values separated by comma inside braces { }. Items in a set are not ordered. Since, set are unordered collection, indexing has no meaning. Hence the slicing operator [] does not work.
+Set have unique values. They eliminate duplicates.</simpara>
+<simpara><literal>a = {1,2,2,3,3,3,4,4,5}</literal> then <literal>a</literal> becomes <literal>{1,2,3,4,5}</literal></simpara>
+<simpara><emphasis role="strong">Dictionary</emphasis> - Dictionary is an unordered collection of key-value pairs.
+It is generally used when we have a huge amount of data. Dictionaries are optimized for retrieving data.
+We must know the key to retrieve the value.</simpara>
+<simpara>So <literal>morse = {'a': ".-", 'b': "<emphasis>..", 'c': "</emphasis>._."}</literal> and <literal>morse['a']</literal> would return <literal>.-</literal></simpara>
+</section>
+</section>
+<section xml:id="__literal_constants_py_literal_program">
+<title><literal>constants.py</literal> Program</title>
+<formalpara>
+<title>constants.py program code</title>
+<para>
+<programlisting language="python" linenumbering="unnumbered"># --- Typical usage is a constant.py file for constants????
+
+PI = 3.1415
+GRAVITY = 9.8
+
+# --- Used in other files
+#
+# import constant
+# print(constant.PI)</programlisting>
+</para>
+</formalpara>
+</section>
+<section xml:id="__literal_python1_py_literal_program">
+<title><literal>python1.py</literal> Program</title>
+<formalpara>
+<title>python1.py program code</title>
+<para>
+<programlisting language="python" linenumbering="unnumbered"># --- GeekMustHave Python - Getting Started
+
+# --- All this just to clear the screen???
+import os
+_=os.system("clear")
+
+message = "GeekMustHave, Python Journeys - Getting started "
+message += "11/21/2018 Happy Learning Day"
+print(message)
+
+# --- Def is the equilivant of function
+#     DocString can be first line of Def triple double-quotes """Description"""
+
+def double(num):
+  """Function to double the value sent to it"""
+  return num*2
+
+print(double(4))  #--- Run the function
+print(double.__doc__)  #--- Show documentation about function
+
+# --- Multiple variables, one line
+firstName, lastName, age, pi = 'John', 'Schuster', 65, 3.1415
+
+print("First name: " + firstName)
+print("Last Name: " + lastName)
+print("My age: " + str(age))  #--- standard (str) function
+print("Piece of Pi: " + str(pi))
+print("Pi Age: " + str(age * pi))
+
+import constant
+print(constant.PI)   #--- Not the same as lowercase (pi)
+
+# --- Lists [] [] [] [] []
+a = [5,10,12,32,118]
+print('Forth item in list: ' + str(a[3]))  #--- should be 32 as lists are zero based index
+a[3]=988
+print('Forth item in list: ' + str(a[3]))  #--- should be 988 as lists are zero based index
+
+# --- Tuples - Can't be changed () () () ()
+vowels = ('a', 'e', 'i', 'o', 'u')
+print("Second item in set: " + vowels[1])
+
+# --- Sets - Unordered lists, not reordered, dups removed {} {} {} {}
+ids = {192, 188, 203, 188, 144, 192, 188}
+print("Sets: ")
+print(ids)
+
+# --- Dictionary - Unordered key:value  {:} {:} {:}, no indexed 0,1,2 access, key only
+morse = {'a': ".-", 'b': "_..", 'c': "_._."}
+print("Morse for 'a': " + morse['a'])</programlisting>
+</para>
+</formalpara>
+<section xml:id="__literal_python1_py_literal_results">
+<title><literal>python1.py</literal> results</title>
+<simpara>Here are the results from the python program</simpara>
+<formalpara>
+<title>Python Results</title>
+<para>
+<programlisting language="text" linenumbering="unnumbered">GeekMustHave, Python Journeys - Getting started 11/21/2018 Happy Learning Day
+8
+Function to double the value sent to it
+First name: John
+Last Name: Schuster
+My age: 65
+Piece of Pi: 3.1415
+Pi Age: 204.19750000000002
+3.1415
+Forth item in list: 32
+Forth item in list: 988
+Second item in set: e
+Sets:
+{192, 203, 188, 144}
+Morse for 'a': .-</programlisting>
+</para>
+</formalpara>
+<simpara><?asciidoc-pagebreak?></simpara>
+</section>
+</section>
+<section xml:id="_resources">
+<title>Resources</title>
+<variablelist>
+<varlistentry>
+<term>Python Wiki</term>
+<listitem>
+<simpara><link xlink:href="https://wiki.python.org/moin/BeginnersGuide/Programmers">https://wiki.python.org/moin/BeginnersGuide/Programmers</link></simpara>
+</listitem>
+</varlistentry>
+</variablelist>
+</section>
+</article>

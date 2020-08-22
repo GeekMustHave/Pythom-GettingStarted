@@ -4,16 +4,16 @@ v2.1b, 11/07/2018: Personal Notes
 :Author: John HR Schuster
 :Company: Phoenix Learning Labs
 :toc: left
-:toclevels: 4:
+:toclevels: 4
 :imagesdir: ./images
 :pagenums:
 :numbered: 
 :chapter-label: 
 :experimental:
-:source-hightlighter: coderay
+:source-highlighter: coderay
 :source-language: python
 :icons: font
-:docdir: */documents
+:docodir: ./doco
 :github: https://github.com/GeekMustHave/Pythom-GettingStarted
 :linkattrs:
 :seclinks:
@@ -186,6 +186,15 @@ Sets:
 {192, 203, 188, 144}
 Morse for 'a': .-
 ----
+<<<<
+== References
+
+.Something
+[options='header']
+,===
+include::{docodir}/something.csv[Something]
+,===
+
 
 
 <<<<
@@ -195,7 +204,8 @@ Morse for 'a': .-
 Python Wiki::
 https://wiki.python.org/moin/BeginnersGuide/Programmers[https://wiki.python.org/moin/BeginnersGuide/Programmers, window='_blank']
 
-
+Python 101 Course Beginners::
+http://www.davekuhlman.org/python_101.html[http://www.davekuhlman.org/python_101.html, windows="_blank"]
 
 
 ////
