@@ -10,6 +10,7 @@ print(message)
 
 # --- Def is the equilivant of function
 #     DocString can be first line of Def triple double-quotes """Description"""
+#     DocString like a help for the DEF (Function)
 
 def double(num):
   """Function to double the value sent to it"""
