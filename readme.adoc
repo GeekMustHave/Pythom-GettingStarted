@@ -207,8 +207,23 @@ https://wiki.python.org/moin/BeginnersGuide/Programmers[https://wiki.python.org/
 Python 101 Course Beginners::
 http://www.davekuhlman.org/python_101.html[http://www.davekuhlman.org/python_101.html, windows="_blank"]
 
+Python for Beginners (Udemy)::
+
+
+
 
 ////
 This template created by GeekMustHave
 ////
+
+<<<<
+== Document History
+
+.Document History
+[cols='2,2,2,6' options='header']
+|===
+| Date  | Version | Author | Description
+| 08/22/2020 | V2.1b | JHRS |  Updated during C19
+| 11/07/2018 | v2.1b | jhrs | Initial version on learninfg day
+|===
 
